@@ -93,6 +93,12 @@ export default function Home() {
               🎬 Creator Studio
             </a>
             <a
+              href="/skills"
+              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 transition-colors border border-white/15 px-6 py-3 rounded-xl font-semibold text-white"
+            >
+              🧠 Skills Hub
+            </a>
+            <a
               href="/install"
               className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 transition-colors px-6 py-3 rounded-xl font-semibold text-white"
             >
