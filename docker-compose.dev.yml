@@ -1,0 +1,64 @@
+version: "3.9"
+
+# Development overrides — hot-reload, debug ports, volume mounts
+services:
+  auth-service:
+    volumes:
+      - ./services/auth:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8001 --reload
+    environment:
+      DEBUG: "true"
+
+  ai-service:
+    volumes:
+      - ./services/ai:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8002 --reload
+    environment:
+      DEBUG: "true"
+
+  dna-service:
+    volumes:
+      - ./services/dna:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8003 --reload
+    environment:
+      DEBUG: "true"
+
+  memory-service:
+    volumes:
+      - ./services/memory:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8004 --reload
+    environment:
+      DEBUG: "true"
+
+  media-service:
+    volumes:
+      - ./services/media:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8005 --reload
+    environment:
+      DEBUG: "true"
+
+  projects-service:
+    volumes:
+      - ./services/projects:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8006 --reload
+    environment:
+      DEBUG: "true"
+
+  api-gateway:
+    volumes:
+      - ./services/gateway:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    environment:
+      DEBUG: "true"
+
+  web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./apps/web:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      VITE_API_BASE_URL: http://localhost:8000

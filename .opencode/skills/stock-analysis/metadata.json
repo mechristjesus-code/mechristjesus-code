@@ -1,0 +1,18 @@
+{
+  "name": "stock-analysis",
+  "description": "Analyze stocks and companies using financial market data. Get company profiles, technical insights, price charts, insider holdings, and SEC filings for comprehensive stock research.",
+  "version": "1.0.0",
+  "builder_metadata": {
+    "name": "stock-analysis",
+    "files": [
+      {
+        "name": "SKILL.md"
+      },
+      {
+        "name": "references/yahoo-api.md"
+      }
+    ],
+    "version": "1.0.0",
+    "description": "Analyze stocks and companies using financial market data. Get company profiles, technical insights, price charts, insider holdings, and SEC filings for comprehensive stock research."
+  }
+}

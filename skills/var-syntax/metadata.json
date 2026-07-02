@@ -1,0 +1,9 @@
+{
+  "name": "var-syntax",
+  "version": "1.0.0",
+  "description": "Complete document variable syntax reference — conditionals, calculations, formatting, security masking, tables, and advanced logic",
+  "author": "mechristjesus-code",
+  "tags": ["document-automation", "variables", "syntax", "templates", "conditional-logic", "formatting"],
+  "categories": ["Data", "Automation", "Content"],
+  "sourceFiles": ["var syntax.pdf"]
+}

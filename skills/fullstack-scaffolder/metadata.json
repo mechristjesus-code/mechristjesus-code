@@ -1,0 +1,9 @@
+{
+  "name": "fullstack-scaffolder",
+  "version": "1.0.0",
+  "description": "Auto-scaffold production-ready full-stack monorepos with FastAPI microservices and React/TypeScript frontend",
+  "author": "mechristjesus-code",
+  "tags": ["fullstack", "scaffolding", "fastapi", "react", "microservices", "docker", "monorepo"],
+  "categories": ["Code", "Automation"],
+  "sourceFiles": ["Full-Stack_Scaffolder_Skill__Detailed_Explanation.md", "Full-Stack_Scaffolder_Revolutionizing_Application.pdf"]
+}

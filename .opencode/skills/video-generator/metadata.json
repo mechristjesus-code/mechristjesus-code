@@ -1,0 +1,15 @@
+{
+  "name": "video-generator",
+  "description": "Professional AI video production workflow. Use when creating videos, short films, commercials, or any video content using AI generation tools.",
+  "version": "1.0.0",
+  "builder_metadata": {
+    "name": "video-generator",
+    "files": [
+      {
+        "name": "SKILL.md"
+      }
+    ],
+    "version": "1.0.0",
+    "description": "Professional AI video production workflow. Use when creating videos, short films, commercials, or any video content using AI generation tools."
+  }
+}

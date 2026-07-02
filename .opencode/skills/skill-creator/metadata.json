@@ -1,0 +1,34 @@
+{
+  "name": "skill-creator",
+  "description": "Guide for creating or updating skills that extend Manus via specialized knowledge, workflows, or tool integrations. For any modification or improvement request, MUST first read this skill and follow its update workflow instead of editing files directly.",
+  "version": "1.0.0",
+  "builder_metadata": {
+    "name": "skill-creator",
+    "files": [
+      {
+        "name": "SKILL.md"
+      },
+      {
+        "name": "LICENSE.txt"
+      },
+      {
+        "name": "references/workflows.md"
+      },
+      {
+        "name": "references/progressive-disclosure-patterns.md"
+      },
+      {
+        "name": "references/output-patterns.md"
+      },
+      {
+        "name": "scripts/init_skill.py"
+      },
+      {
+        "name": "scripts/quick_validate.py"
+      }
+    ],
+    "license": "Complete terms in LICENSE.txt",
+    "version": "1.0.0",
+    "description": "Guide for creating or updating skills that extend Manus via specialized knowledge, workflows, or tool integrations. For any modification or improvement request, MUST first read this skill and follow its update workflow instead of editing files directly."
+  }
+}
