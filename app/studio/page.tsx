@@ -3,7 +3,7 @@ import { useRef, useState, useCallback } from "react";
 import Link from "next/link";
 
 // ── Tab type ───────────────────────────────────────────────────
-type Tab = "actor" | "generate" | "youtube" | "monetize";
+type Tab = "actor" | "generate" | "youtube" | "remix" | "monetize";
 
 // ── Shared helpers ─────────────────────────────────────────────
 export function fileToBase64(file: File): Promise<{ base64: string; mime: string }> {
@@ -56,14 +56,16 @@ export function ErrorBox({ msg, onRetry }: { msg: string; onRetry?: () => void }
 import { ActorTab }    from "./tabs/ActorTab";
 import { GenerateTab } from "./tabs/GenerateTab";
 import { YouTubeTab }  from "./tabs/YouTubeTab";
+import { RemixTab }    from "./tabs/RemixTab";
 import { MonetizeTab } from "./tabs/MonetizeTab";
 
 // ── Main page ──────────────────────────────────────────────────
 const TABS: { key: Tab; icon: string; label: string }[] = [
-  { key: "actor",    icon: "🎭", label: "AI Actor"   },
-  { key: "generate", icon: "🎬", label: "Generate"   },
-  { key: "youtube",  icon: "▶️",  label: "YouTube"    },
-  { key: "monetize", icon: "💰", label: "Monetize"   },
+  { key: "actor",    icon: "🎭", label: "AI Actor"  },
+  { key: "generate", icon: "🎬", label: "Generate"  },
+  { key: "youtube",  icon: "▶️",  label: "YouTube"   },
+  { key: "remix",    icon: "🔀", label: "Remix"     },
+  { key: "monetize", icon: "💰", label: "Monetize"  },
 ];
 
 export default function StudioPage() {
@@ -102,6 +104,7 @@ export default function StudioPage() {
         {tab === "actor"    && <ActorTab />}
         {tab === "generate" && <GenerateTab />}
         {tab === "youtube"  && <YouTubeTab />}
+        {tab === "remix"    && <RemixTab />}
         {tab === "monetize" && <MonetizeTab />}
       </div>
     </div>
