@@ -30,7 +30,10 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files — never commit secrets
+.env
+.env.local
+.env.*.local
 !.env.example
 
 # vercel
@@ -51,4 +54,10 @@ next-env.d.ts
 # Remote Control runtime data
 /remote-control/data/
 !/remote-control/data/.gitkeep
+
+# Uploaded attachments (large binary files)
+/attachements/
+
+# OpenCode agent internals
+/.opencode/
 

@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { AgentationGuard } from "@/components/AgentationGuard";
 import { HappySeedsWatermark } from "@/components/HappySeedsWatermark";
+import { ToastProvider } from "@/components/Toast";
 import "./globals.css";
 import jsonMetadata from "../metadata.json";
 
@@ -38,7 +39,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ToastProvider>
+          {children}
+        </ToastProvider>
         <HappySeedsWatermark />
         <AgentationGuard />
         {process.env.NODE_ENV === "production" && <Analytics />}
