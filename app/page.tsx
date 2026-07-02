@@ -87,6 +87,12 @@ export default function Home() {
               View on GitHub
             </a>
             <a
+              href="/download"
+              className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 transition-colors px-6 py-3 rounded-xl font-semibold text-white"
+            >
+              📱 Get on Phone
+            </a>
+            <a
               href="#architecture"
               className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 transition-colors border border-white/10 px-6 py-3 rounded-xl font-semibold text-white"
             >

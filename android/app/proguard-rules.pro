@@ -1,0 +1,3 @@
+-keep class com.creatordna.os.** { *; }
+-keepattributes *Annotation*
+-keepattributes SourceFile,LineNumberTable
