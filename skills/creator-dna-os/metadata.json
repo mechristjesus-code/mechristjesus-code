@@ -1,0 +1,9 @@
+{
+  "name": "creator-dna-os",
+  "version": "1.0.0",
+  "description": "Production-ready AI creator platform with modular microservices, content generation, DNA profiles, and media management",
+  "author": "mechristjesus-code",
+  "tags": ["ai", "content-creation", "fastapi", "react", "openai", "media", "youtube", "microservices"],
+  "categories": ["Content", "AI", "Media", "Code"],
+  "sourceFiles": ["Creator_DNA_OS.md", "Creator_DNA_OS.pdf"]
+}
