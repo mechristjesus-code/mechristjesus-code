@@ -1,0 +1,15 @@
+{
+  "name": "tts-prompter",
+  "description": "MUST read this skill BEFORE entering generate mode for text-to-speech (TTS) tasks. Covers prompt crafting framework, separating spoken text from style instructions, and using markup tags vs natural language for emotions and non-speech sounds.",
+  "version": "1.0.0",
+  "builder_metadata": {
+    "name": "tts-prompter",
+    "files": [
+      {
+        "name": "SKILL.md"
+      }
+    ],
+    "version": "1.0.0",
+    "description": "MUST read this skill BEFORE entering generate mode for text-to-speech (TTS) tasks. Covers prompt crafting framework, separating spoken text from style instructions, and using markup tags vs natural language for emotions and non-speech sounds."
+  }
+}

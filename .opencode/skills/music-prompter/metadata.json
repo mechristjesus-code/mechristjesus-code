@@ -1,0 +1,15 @@
+{
+  "name": "music-prompter",
+  "description": "MUST read this skill BEFORE entering generate mode for music tasks. Covers prompt crafting framework, structure syntax, and multi-clip strategy.",
+  "version": "1.0.0",
+  "builder_metadata": {
+    "name": "music-prompter",
+    "files": [
+      {
+        "name": "SKILL.md"
+      }
+    ],
+    "version": "1.0.0",
+    "description": "MUST read this skill BEFORE entering generate mode for music tasks. Covers prompt crafting framework, structure syntax, and multi-clip strategy."
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "name": "manus-api",
+  "description": "Manage tasks, projects, and other data in Manus via API, build OAuth2 third-party integrations, or create Manus tasks programmatically to build services or workflows that need agentic capabilities.",
+  "version": "1.0.0",
+  "builder_metadata": {
+    "name": "manus-api",
+    "files": [
+      {
+        "name": "SKILL.md"
+      },
+      {
+        "name": "docs/v1/api-overview.mdx"
+      },
+      {
+        "name": "docs/v1/create-file.mdx"
+      },
+      {
+        "name": "docs/v1/create-project.mdx"
+      },
+      {
+        "name": "docs/v1/create-task.mdx"
+      },
+      {
+        "name": "docs/v1/create-webhook.mdx"
+      },
+      {
+        "name": "docs/v1/delete-file.mdx"
+      },
+      {
+        "name": "docs/v1/delete-task.mdx"
+      },
+      {
+        "name": "docs/v1/delete-webhook.mdx"
+      },
+      {
+        "name": "docs/v1/get-file.mdx"
+      },
+      {
+        "name": "docs/v1/get-task.mdx"
+      },
+      {
+        "name": "docs/v1/get-tasks.mdx"
+      },
+      {
+        "name": "docs/v1/list-files.mdx"
+      },
+      {
+        "name": "docs/v1/list-projects.mdx"
+      },
+      {
+        "name": "docs/v1/openapi.json"
+      },
+      {
+        "name": "docs/v1/overview.mdx"
+      },
+      {
+        "name": "docs/v1/quickstart.mdx"
+      },
+      {
+        "name": "docs/v1/update-task.mdx"
+      },
+      {
+        "name": "docs/v1/webhooks.mdx"
+      },
+      {
+        "name": "docs/v1/connectors/gmail.mdx"
+      },
+      {
+        "name": "docs/v1/connectors/google-calendar.mdx"
+      },
+      {
+        "name": "docs/v1/connectors/notion.mdx"
+      },
+      {
+        "name": "docs/v1/connectors/overview.mdx"
+      },
+      {
+        "name": "docs/v1/data-integrations/overview.mdx"
+      },
+      {
+        "name": "docs/v1/data-integrations/similarweb.mdx"
+      },
+      {
+        "name": "docs/v1/integrations/overview.mdx"
+      },
+      {
+        "name": "docs/v1/integrations/slack.mdx"
+      },
+      {
+        "name": "docs/v1/openai-compatibility/overview.mdx"
+      },
+      {
+        "name": "docs/v1/webhooks/overview.mdx"
+      },
+      {
+        "name": "docs/v1/webhooks/security.mdx"
+      },
+      {
+        "name": "docs/v2/agent.detail.mdx"
+      },
+      {
+        "name": "docs/v2/agent.list.mdx"
+      },
+      {
+        "name": "docs/v2/agent.update.mdx"
+      },
+      {
+        "name": "docs/v2/agents-overview.mdx"
+      },
+      {
+        "name": "docs/v2/authentication.mdx"
+      },
+      {
+        "name": "docs/v2/browser.onlineList.mdx"
+      },
+      {
+        "name": "docs/v2/connector.list.mdx"
+      },
+      {
+        "name": "docs/v2/connectors.mdx"
+      },
+      {
+        "name": "docs/v2/data-integrations-overview.mdx"
+      },
+      {
+        "name": "docs/v2/data-integrations-similarweb.mdx"
+      },
+      {
+        "name": "docs/v2/file.delete.mdx"
+      },
+      {
+        "name": "docs/v2/file.detail.mdx"
+      },
+      {
+        "name": "docs/v2/file.upload.mdx"
+      },
+      {
+        "name": "docs/v2/integrations-overview.mdx"
+      },
+      {
+        "name": "docs/v2/integrations-slack.mdx"
+      },
+      {
+        "name": "docs/v2/introduction.mdx"
+      },
+      {
+        "name": "docs/v2/oauth.mdx"
+      },
+      {
+        "name": "docs/v2/openapi_v2.json"
+      },
+      {
+        "name": "docs/v2/project.create.mdx"
+      },
+      {
+        "name": "docs/v2/project.list.mdx"
+      },
+      {
+        "name": "docs/v2/rate-limits.mdx"
+      },
+      {
+        "name": "docs/v2/skill.list.mdx"
+      },
+      {
+        "name": "docs/v2/structured-output.mdx"
+      },
+      {
+        "name": "docs/v2/task-lifecycle.mdx"
+      },
+      {
+        "name": "docs/v2/task.confirmAction.mdx"
+      },
+      {
+        "name": "docs/v2/task.create.mdx"
+      },
+      {
+        "name": "docs/v2/task.delete.mdx"
+      },
+      {
+        "name": "docs/v2/task.detail.mdx"
+      },
+      {
+        "name": "docs/v2/task.list.mdx"
+      },
+      {
+        "name": "docs/v2/task.listMessages.mdx"
+      },
+      {
+        "name": "docs/v2/task.sendMessage.mdx"
+      },
+      {
+        "name": "docs/v2/task.stop.mdx"
+      },
+      {
+        "name": "docs/v2/task.update.mdx"
+      },
+      {
+        "name": "docs/v2/usage.list.mdx"
+      },
+      {
+        "name": "docs/v2/usage.teamLog.mdx"
+      },
+      {
+        "name": "docs/v2/usage.teamStatistic.mdx"
+      },
+      {
+        "name": "docs/v2/webhook.create.mdx"
+      },
+      {
+        "name": "docs/v2/webhook.delete.mdx"
+      },
+      {
+        "name": "docs/v2/webhook.list.mdx"
+      },
+      {
+        "name": "docs/v2/webhook.publicKey.mdx"
+      },
+      {
+        "name": "docs/v2/webhooks-overview.mdx"
+      },
+      {
+        "name": "docs/v2/webhooks-security.mdx"
+      },
+      {
+        "name": "docs/v2/website.listCheckpoints.mdx"
+      },
+      {
+        "name": "docs/v2/website.mdx"
+      },
+      {
+        "name": "docs/v2/website.publish.mdx"
+      },
+      {
+        "name": "docs/v2/website.status.mdx"
+      },
+      {
+        "name": "docs/v2/website.update.mdx"
+      }
+    ],
+    "version": "1.0.0",
+    "description": "Manage tasks, projects, and other data in Manus via API, build OAuth2 third-party integrations, or create Manus tasks programmatically to build services or workflows that need agentic capabilities."
+  }
+}
