@@ -29,9 +29,13 @@ export default function SkillsPage() {
   const [uploading,    setUploading]    = useState(false);
   const [uploadError,  setUploadError]  = useState("");
   const [dragOver,     setDragOver]     = useState(false);
+  const [search,       setSearch]       = useState("");
   const fileRef = useRef<HTMLInputElement>(null);
 
-  useEffect(() => { fetchSkills(); }, []);
+  useEffect(() => {
+    // Auto-seed built-in skills then fetch
+    fetch("/api/skills/seed", { method: "POST" }).finally(fetchSkills);
+  }, []);
 
   async function fetchSkills() {
     const res = await fetch("/api/skills/list");
@@ -100,7 +104,13 @@ export default function SkillsPage() {
       <div className="flex flex-1 overflow-hidden max-w-6xl w-full mx-auto px-4 py-6 gap-6">
         {/* Left: skill list + upload */}
         <SkillSidebar
-          skills={skills}
+          skills={skills.filter((s) =>
+            !search.trim() ||
+            s.name.toLowerCase().includes(search.toLowerCase()) ||
+            s.description.toLowerCase().includes(search.toLowerCase())
+          )}
+          search={search}
+          onSearch={setSearch}
           selected={selected}
           uploading={uploading}
           uploadError={uploadError}
@@ -171,10 +181,11 @@ function EmptyState({ onUploadClick }: { onUploadClick: () => void }) {
 }
 
 function SkillSidebar({
-  skills, selected, uploading, uploadError, dragOver,
+  skills, search, onSearch, selected, uploading, uploadError, dragOver,
   fileRef, onDragOver, onDragLeave, onDrop, onFileChange, onSelect, onDelete,
 }: {
-  skills: Skill[]; selected: Skill | null; uploading: boolean;
+  skills: Skill[]; search: string; onSearch: (v: string) => void;
+  selected: Skill | null; uploading: boolean;
   uploadError: string; dragOver: boolean;
   fileRef: React.RefObject<HTMLInputElement | null>;
   onDragOver: (e: React.DragEvent) => void;
@@ -210,6 +221,13 @@ function SkillSidebar({
         accept=".md,.txt,.pdf,.json,.yaml,.yml,.toml"
         className="hidden" onChange={onFileChange} />
       {uploadError && <p className="text-xs text-red-400 px-1">{uploadError}</p>}
+
+      {/* Search */}
+      <input
+        value={search} onChange={(e) => onSearch(e.target.value)}
+        placeholder="🔍 Search skills…"
+        className="w-full bg-gray-900 border border-white/10 rounded-xl px-3 py-2 text-sm text-white placeholder-gray-600 focus:outline-none focus:border-purple-500/50 transition-colors"
+      />
 
       {/* Skill list */}
       <div className="flex-1 space-y-2 overflow-y-auto max-h-[60vh]">

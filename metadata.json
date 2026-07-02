@@ -1,5 +1,14 @@
 {
-  "title": "HappySeeds",
-  "description": "The future of building is here. HappySeeds uses an agentic layer to bridge the gap between intent and code. High-fidelity UI, zero friction. Grow what you feel today.",
-  "keywords": [ "HappySeeds", "VibeCoding", "AI Agents", "Software Engineering", "SaaS Builder", "UI-First Development" ]
+  "title": "Creator DNA OS — AI Creator Platform",
+  "description": "Creator DNA OS is a production-ready AI creator platform. Generate videos with your face as the AI actor, remix YouTube content, build skills, and auto-upload to YouTube with full monetization metadata.",
+  "keywords": [
+    "Creator DNA OS", "AI Creator Platform", "AI Actor", "YouTube Remix",
+    "AI Video Generator", "Content Creator Tools", "YouTube Monetization",
+    "Skills Hub", "FastAPI Microservices", "React TypeScript"
+  ],
+  "openGraph": {
+    "title": "Creator DNA OS — AI Creator Platform",
+    "description": "Generate AI videos with your face, remix YouTube content, auto-upload and monetize.",
+    "type": "website"
+  }
 }
