@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  auth-db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: auth_db
+    ports:
+      - "5433:5432"
+
+  tasks-db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: tasks_db
+    ports:
+      - "5434:5432"
+
+  auth-service:
+    build:
+      context: ../
+      dockerfile: services/auth/Dockerfile
+    volumes:
+      - ../services/auth:/app
+      - ../packages/shared:/packages/shared
+    environment:
+      - DATABASE_URL=postgresql://user:password@auth-db:5432/auth_db
+      - JWT_SECRET=your_jwt_secret_key
+    depends_on:
+      - auth-db
+
+  tasks-service:
+    build:
+      context: ../
+      dockerfile: services/tasks/Dockerfile
+    volumes:
+      - ../services/tasks:/app
+      - ../packages/shared:/packages/shared
+    environment:
+      - DATABASE_URL=postgresql://user:password@tasks-db:5432/tasks_db
+    depends_on:
+      - tasks-db
+
+  web:
+    build:
+      context: ../apps/web
+      dockerfile: Dockerfile
+    volumes:
+      - ../apps/web:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
