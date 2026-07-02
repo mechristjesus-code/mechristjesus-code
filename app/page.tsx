@@ -87,6 +87,12 @@ export default function Home() {
               View on GitHub
             </a>
             <a
+              href="/studio"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 transition-all px-6 py-3 rounded-xl font-semibold text-white shadow-lg shadow-purple-900/30"
+            >
+              🎬 Creator Studio
+            </a>
+            <a
               href="/install"
               className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 transition-colors px-6 py-3 rounded-xl font-semibold text-white"
             >
