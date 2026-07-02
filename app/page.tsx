@@ -87,10 +87,10 @@ export default function Home() {
               View on GitHub
             </a>
             <a
-              href="/download"
+              href="/install"
               className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 transition-colors px-6 py-3 rounded-xl font-semibold text-white"
             >
-              📱 Get on Phone
+              🚀 Install Everything
             </a>
             <a
               href="#architecture"
