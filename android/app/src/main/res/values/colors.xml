@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- iOS system colors -->
+    <color name="ios_bg">#000000</color>
+    <color name="ios_grouped_bg">#1c1c1e</color>
+    <color name="ios_grouped_secondary">#2c2c2e</color>
+    <color name="ios_label">#FFFFFF</color>
+    <color name="ios_secondary_label">#8e8e93</color>
+    <color name="ios_purple">#5e5ce6</color>
+    <color name="ios_green">#30d158</color>
+    <color name="ios_blue">#0a84ff</color>
+    <color name="ios_nav_bar">#1c1c1eCC</color>
+    <color name="ios_dock_bg">#1c1c1e</color>
+    <color name="ios_separator">#38383a</color>
+</resources>

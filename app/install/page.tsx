@@ -2,7 +2,8 @@
 import { useState } from "react";
 import Link from "next/link";
 
-const RAW = "https://raw.githubusercontent.com/mechristjesus-code/mechristjesus-code/main";
+const RAW      = "https://raw.githubusercontent.com/mechristjesus-code/mechristjesus-code/main";
+const RELEASES = "https://github.com/mechristjesus-code/mechristjesus-code/releases/latest";
 
 type Phase = "idle" | "running" | "done";
 
@@ -68,6 +69,19 @@ export default function InstallPage() {
 
         {/* What gets installed */}
         <WhatYouGet />
+
+        {/* APK direct download */}
+        <div className="bg-blue-900/20 border border-blue-500/30 rounded-2xl p-6 flex flex-col sm:flex-row items-center gap-5">
+          <div className="text-5xl">📦</div>
+          <div className="flex-1 text-center sm:text-left">
+            <div className="font-bold text-lg text-white mb-1">Download APK Directly</div>
+            <div className="text-gray-400 text-sm">Auto-built by GitHub Actions on every push. iOS-style UI, home screen icon, web app + local server buttons.</div>
+          </div>
+          <a href={RELEASES} target="_blank" rel="noopener noreferrer"
+            className="flex-shrink-0 bg-blue-600 hover:bg-blue-500 transition-colors px-5 py-3 rounded-xl font-bold text-white text-sm whitespace-nowrap">
+            ⬇ Get APK
+          </a>
+        </div>
 
         {/* The command */}
         <div className="bg-gray-900 border border-purple-500/30 rounded-2xl p-6">

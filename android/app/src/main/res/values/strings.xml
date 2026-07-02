@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Creator DNA</string>
+    <string name="app_title">Creator DNA OS</string>
+    <string name="open_web_app">Open Web App</string>
+    <string name="open_local">Local Server</string>
+    <string name="back">‹ Back</string>
+</resources>

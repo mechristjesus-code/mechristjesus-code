@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Base iOS-style dark theme -->
     <style name="Theme.CreatorDNA" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:windowBackground">@android:color/black</item>
-        <item name="android:statusBarColor">#030712</item>
-        <item name="android:navigationBarColor">#030712</item>
-        <item name="colorPrimary">#7c3aed</item>
-        <item name="colorPrimaryDark">#030712</item>
-        <item name="colorAccent">#a78bfa</item>
+        <item name="android:windowBackground">@color/ios_bg</item>
+        <item name="android:statusBarColor">@color/ios_bg</item>
+        <item name="android:navigationBarColor">@color/ios_dock_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorPrimary">@color/ios_purple</item>
+        <item name="colorPrimaryDark">@color/ios_bg</item>
+        <item name="colorAccent">@color/ios_purple</item>
+        <item name="android:textColor">@color/ios_label</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <!-- Ripple effect -->
+        <item name="android:colorControlHighlight">#335e5ce6</item>
+    </style>
+
+    <!-- Splash / Launch screen -->
+    <style name="Theme.CreatorDNA.Splash" parent="Theme.CreatorDNA">
+        <item name="android:windowBackground">@color/ios_bg</item>
     </style>
 </resources>
